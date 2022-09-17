@@ -54,9 +54,13 @@ li:hover{
 a{
     color: gainsboro;
 }
-.lista-nav li a:hover,li:hover{
+.lista-nav li:hover > a{
     color: rgb(255, 187, 0);
-    transition: 0.4s;
+    transition: 0.3s;
+}
+.lista-nav li:hover > a > i{
+    color: rgb(255, 187, 0);
+    transition: 0.3s;
 }
 li a i{
     margin-left: 5px;
@@ -148,6 +152,10 @@ main{
     justify-content: center;
 }
 .info-empresa p{
-    width: 80%;
+    width: 60%;
     text-align: center;
+}
+.mas-informacion{
+    color: rgb(255, 187, 0);
+    text-decoration: underline;
 }

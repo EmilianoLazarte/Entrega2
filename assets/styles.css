@@ -6,6 +6,8 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    color: white;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
@@ -21,9 +23,12 @@ nav{
     color: gainsboro;
     padding: 0px 40px 0px 10px;
 }
-img{
+nav img{
     height: 40px;
     width: 70px;
+}
+h1{
+    color: rgb(255, 187, 0);
 }
 .lista-nav{
     display: flex;
@@ -33,6 +38,15 @@ img{
     display: flex;
     gap:50px;
 }
+li{
+    border: 1px solid rgb(50, 3, 94);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+li:hover{
+    border: 1px solid rgb(255, 187, 0);
+    transition: 0.4;
+}
 .logo{
     display: flex;
     align-items: center;
@@ -40,10 +54,100 @@ img{
 a{
     color: gainsboro;
 }
-a:hover{
+.lista-nav li a:hover,li:hover{
     color: rgb(255, 187, 0);
-    transition: 0.7s;
+    transition: 0.4s;
+}
+li a i{
+    margin-left: 5px;
+}
+.main-header img{
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
 }
 main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-header{
+    margin-top: 45px;
+    border-radius: 20px;
+    width: 80%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background-color: rgb(21, 0, 41);
+}
+.main-header-info{
+    width: 35%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main-header-info h2{
+    font-size: 45px;
+    color:rgb(255, 187, 0);
+}
+.main-header-info p{
+    width: 64%;
+}
+.main-header-botones{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.main-header-botones button{
+    border-radius: 15px;
+    width: 150px;
+    height: 35px;
+    border: none;
+}
+.main-header-botones .botonA{
     background-color: black;
+}
+.botonA a{
+    text-transform: uppercase;
+}
+.botonA:hover{
+    background-color: rgb(24, 24, 24);
+    transition: 0.1s;
+}
+.main-header-botones .botonB{
+    background-color: white;
+}
+.main-header-botones .botonB a{
+    color: black;
+    text-transform: uppercase;
+}
+.main-header-botones .botonB:hover{
+    background-color: rgb(163, 163, 163);
+}
+.arrow-down{
+    margin-top: 0px;
+}
+.arrow-down i{
+    color: white;
+    font-size: 100px;
+    color: rgb(255, 187, 0);
+}
+.info-empresa{
+    background-color:rgb(21, 0, 41);
+    padding: 40px 60px;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-empresa p{
+    width: 80%;
+    text-align: center;
 }

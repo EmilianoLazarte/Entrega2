@@ -7,58 +7,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco Della Toscana</title>
     <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="icon" href="./assets/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="stylesheet" href="/assets/queris.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="/assets/logo.png" alt="Logo del Banco"></a>
-                <a href="#">
-                    <h1>Banco Della Toscana</h1>
-                </a>
-            </div>
-            <div class="lista-nav">
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Sucursales</a></li>
-                    <li><a href="#">Beneficios</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Home Banking <i class="bi bi-bank2"></i></a></li>
-                </ul>
-            </div>
+        <div class="logo">
+            <a href="#"><img src="/assets/logo.png" alt="Logo del Banco"></a>
+        </div>
+        <nav class="lista-nav">
+            <label for="menu-toggle" class="menu-desplegable">
+                <i class="bi bi-list"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="primer-ul">
+                <li class="primeros-li gradiente"><a href="#info-empresa">Nosotros</a></li>
+                <li class="primeros-li"><a href="#beneficios">Beneficios</a></li>
+                <li class="primeros-li"><a href="#contacto">Contacto</a></li>
+                <li class="primeros-li home-banking"><a href="#">Home Banking <i class="bi bi-bank2"></i></a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="main-header">
-            <div class="main-header-info">
-                <h2>Tus ahorros están en buenas manos.</h2>
-                <p>No te preocupes de la economía de tu hogar, disfruta de tu familia,
-                    nosotros nos encargamos del trabajo pesado.
-                </p>
-                <div class="main-header-botones">
-                    <button class="botonA"><a href="#">Hacete Cliente</a></button>
-                    <button class="botonB"><a href="#">¡Pedi tu tarjeta!</a></button>
+        <section class="hero">
+            <div class="hero-info">
+                <h1>Tus ahorros, en buenas manos.</h1>
+                <div class="main-header-info-margin-left">
+                    <p>No te preocupes de la economía de tu hogar, disfruta de tu familia,
+                        nosotros nos encargamos del trabajo pesado.
+                    </p>
+                    <div class="main-header-botones">
+                        <button class="botonA"><a href="#">Hacete Cliente</a></button>
+                        <button class="botonB"><a href="#">¡Pedi tu tarjeta!</a></button>
+                    </div>
                 </div>
             </div>
-            <img src="https://previews.123rf.com/images/nikey62/nikey621706/nikey62170600133/81461884-diversi%C3%B3n-en-el-parque-gente-en-un-evento-de-entretenimiento-en-un-parque-de-la-ciudad-.jpg"
-                alt="Personas en el parque">
-        </div>
-        <div class="arrow-down">
-            <a href="#info-empresa" style="transition: 0.1s;"><i class="bi bi-arrow-down"></i></a>
-        </div>
-        <div class="info-empresa" id="info-empresa">
-            <p>En Banco Della Toscana nos caracterizamos por la buena
-                atención al cliente,en pos de brindarle la mayor seguridad
-                posible ante cualquier duda que se le presente. La calidad
-                de los servicios que brindamos son de primer nivel,
-                consultá en la sección beneficios para 
-                <a href="#" class="mas-informacion">mas información</a>.
-            </p>
-        </div>
-    </main>
+            <img src="https://techgenies.com/wp-content/uploads/2020/07/office-work.png" alt="Hero Image">
+        </section>
 
+
+        <section class="info-empresa" id="info-empresa">
+            <div class="titulo-seccion">
+                <h2>Sobre Nosotros</h2>
+                <div class="divisor">
+                    <div class="divisor-interno"></div>
+                    <img src="/assets/divisor.png" alt="">
+                    <div class="divisor-interno"></div>
+                </div>
+            </div>
+
+            <div class="info-empresa-description">
+                <img src="https://preview.colorlib.com/theme/banker/images/xhero_1.jpg.pagespeed.ic.54htOpCzCY.webp"
+                    alt="">
+                <div class="info-empresa-description-parrafo">
+                    <h2>Resolvemos problemas financieros.</h2>
+                    <p>En Banco Della Toscana nos caracterizamos por la buena
+                        atención al cliente,en pos de brindarle la mayor seguridad
+                        posible ante cualquier duda que se le presente. La calidad
+                        de los servicios que brindamos son de primer nivel,
+                        consultá en la sección beneficios para
+                        <a href="#" class="mas-informacion">mas información</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="beneficios" id="beneficios">
+            <div class="titulo-seccion">
+                <h2>Beneficios</h2>
+                <div class="divisor">
+                    <div class="divisor-interno"></div>
+                    <img src="/assets/divisor.png" alt="">
+                    <div class="divisor-interno"></div>
+                </div>
+            </div>
+            <div class="card-section">
+                <div class="cards">
+                    <img src="/assets/001-wallet.svg" alt="">
+                    <h3>Ahorrá Dinero</h3>
+                    <p>Decenas de herramientas para hacer que tu dinero crezca.</p>
+                </div>
+                <div class="cards">
+                    <img src="/assets/002-cart.svg" alt="">
+                    <h3>Compras Online</h3>
+                    <p>Estamos asociados con cientos de locales en todo el país
+                        para que puedas usar tu tarjeta y ahorrar dinero.
+                    </p>
+                </div>
+                <div class="cards">
+                    <img src="/assets/003-credit-card.svg" alt="">
+                    <h3>Tarjetas de Crédito y Débito</h3>
+                    <p>Pedí tu tarjeta de credito y debito en cualquier momento
+                        y sin costo alguno.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+
+            <div class="titulo-seccion">
+                <h2>Contacto</h2>
+                <div class="divisor">
+                    <div class="divisor-interno"></div>
+                    <img src="/assets/divisor.png" alt="">
+                    <div class="divisor-interno"></div>
+                </div>
+            </div>
+            <div class="contacto-interior">
+                <div class="contactos">
+                    <div class="contact">
+                        <i class="bi bi-geo-alt"></i>
+                        <p>
+                            2880 Broadway, New York, NY 10025, EE. UU.
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-envelope"></i>
+                        <p>bancodellatoscana@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-telephone"></i>
+                        <p>+54 9 0 11 98538365</p>
+                    </div>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="643" height="386" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://123movies-to.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 386px;
+                                width: 643px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">google maps link generator</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 386px;
+                                width: 643px;
+                                border-radius: 30px;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <img src="/assets/ubicacion.png" alt="">
+            </div>
+        </section>
+    </main>
+    <div class="divisor-footer"></div>
+    <footer>
+        <div class="pie">
+            <img src="/assets/logo.png" alt="">
+            <ul class="primer-ul">
+                <li class="primeros-li gradiente"><a href="#info-empresa">Nosotros</a></li>
+                <li class="primeros-li"><a href="#beneficios">Beneficios</a></li>
+                <li class="primeros-li"><a href="#">Contacto</a></li>
+                <li class="primeros-li"><a href="#">Home Banking</a></li>
+            </ul>
+            <div class="icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+
+            </div>
+        </div>
+        <p><i class="bi bi-c-circle"></i> Banco Della Toscana.
+            Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>

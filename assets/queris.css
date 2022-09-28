@@ -1,0 +1,174 @@
+@media (max-width:1400px) {
+    footer{
+        max-width: unset;
+        width: 90%;
+    }
+    .hero img{
+        width: 700px;
+    }
+    .info-empresa{
+        margin-top: 100px;
+    }
+}
+@media (max-width:1200px) {
+    .hero-info{
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero{
+        margin-top: 100px;
+    }
+    .contacto-interior{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .info-empresa{
+        margin-top: 100px;
+    }
+    .info-empresa-description{
+        gap: 100px;
+        width: 80%;
+    }
+    .hero img{
+        width: 50%;
+    }
+}
+@media (max-width:992px) {
+    .hero img{
+        display: none;
+    }
+    .hero{
+        align-items: center;
+        justify-content: center;
+        width: 760px;
+        margin-top: 0px;
+    }
+    .info-empresa{
+        margin-top: -100px;
+    }
+    .info-empresa-description{
+        gap: 10px;
+    }
+    .info-empresa-description img{
+        width: 450px;
+    }
+}
+@media (max-width:840px) {
+    .info-empresa-description{
+        margin-top: -30px;
+        width: 100%;
+    }
+    .info-empresa-description-parrafo{
+        width: 75%;
+    }
+    .info-empresa-description img{
+        display: none;
+    }
+    .divisor{
+        gap: 0px;
+    }
+    .divisor img{
+        width: 50px;
+    }
+    .titulo-seccion h2{
+        font-size: 20px;
+    }
+    .info-empresa{
+        margin: 0px;
+    }
+    main{
+        gap: 50px;
+    }
+    .card-section{
+        gap: 0px;
+    }
+}
+@media (max-width:768px) {
+    .card-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .primer-ul{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 90px;
+        right: 0;
+        background-color: rgb(88, 27, 27);
+        width: 30%;
+        align-items: flex-end;
+        border-radius: 0px 0px 0px 20px;
+        padding: 10px 0px 10px 10px;
+    }
+    .home-banking:hover{
+        background-color: unset;
+    }
+    .primeros-li > a{
+        color: white;
+    }
+    .lista-nav li:hover > a{
+        color: black;
+        transition: 0.4s;
+    }
+    .lista-nav .home-banking:hover > a,.lista-nav .home-banking:hover > a > i{
+        color: black;
+        transition: 0.4s;
+    }
+    .primeros-li{
+        border-bottom: 2px solid black;
+        width: 100%;
+        border-radius: unset;
+    }
+    .menu-desplegable{
+        display: flex;
+    }
+    #menu-toggle:checked + .primer-ul{
+        display: flex;
+    }
+    .mapouter{
+        display: none;
+    }
+    .contacto-interior img{
+        display: block;
+        width: 80%;
+    }
+    .contacto{
+        width: 90%;
+    }
+    main{
+        overflow-x: hidden;
+    }
+
+}
+@media (max-width:576px) {
+    .hero-info h1{
+        font-size: 50px;
+    }
+    .hero{
+        width: 100%;
+    }   
+    .main-header-info-margin-left{
+        width: 89%;
+    }
+    .main-header-info-margin-left p{
+        width: 100%;
+    }
+    .primer-ul{
+        width: 50%;
+    }
+}
+@media (max-width:470px) {
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero-info p{
+        font-size: 17px;
+    }
+    .hero-info{
+        width: 95%;
+    }
+}
